@@ -13,7 +13,6 @@
         <module>jd</module>
     </modules>
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
