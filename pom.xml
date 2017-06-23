@@ -36,4 +36,18 @@
         </plugins>
     </build>
 
+    <!-- 发布组件到搭建的nexus，会用到maven包settings.xml里配置的账号，需要注意repository的id与settins.xml里的一样 -->
+    <distributionManagement>
+        <repository>
+            <id>com.laoda271-release</id>
+            <name>com.laoda271-release</name>
+            <url>http://10.13.91.40:8081/nexus/content/repositories/com.laoda271-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>com.laoda271-snapshots</id>
+            <name>com.laoda271-snapshots</name>
+            <url>http://10.13.91.40:8081/nexus/content/repositories/com.laoda271-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>

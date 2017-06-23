@@ -4,27 +4,33 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <!-- groupId和artifactId注意编写 -->
+        <groupId>com.laoda271</groupId>
+        <artifactId>spring</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
     <artifactId>jd</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
-    <parent>
-        <groupId>spring</groupId>
-        <artifactId>com.laoda271</artifactId>
-        <version>1.0</version>
-    </parent>
+
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.7</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
                 <configuration>
-                    <skip>true</skip>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 </project>
