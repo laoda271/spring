@@ -22,9 +22,9 @@ public class Application {
 		};
 	}
 
-	public static void main(String[] args) {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
-		MessagePrinter printer = context.getBean(MessagePrinter.class);
-		printer.printMessage();
-	}
+//	public static void main(String[] args) {
+//		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
+//		MessagePrinter printer = context.getBean(MessagePrinter.class);
+//		printer.printMessage();
+//	}
 }
